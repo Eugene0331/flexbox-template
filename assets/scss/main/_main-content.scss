@@ -26,12 +26,11 @@
 
   &__body {
     display: flex;
+    flex-wrap: wrap;
 
     margin-top: -$gap / 4;
     margin-right: -$gap / 4;
     margin-bottom: $gap - $gap / 4;
     margin-left: -$gap / 4;
-
-    flex-wrap: wrap;
   }
 }

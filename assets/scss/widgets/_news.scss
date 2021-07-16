@@ -1,11 +1,10 @@
 .widget-news__item {
   &-wrapper {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 0 (-$gap / 2) ($gap / 4);
     padding: 0 ($gap / 2) ($gap / 4);
-
-    flex-wrap: wrap;
   }
 
   &-title {
@@ -13,6 +12,7 @@
 
     transition: color 0.5s;
     letter-spacing: 1px;
+
     font-weight: 300;
 
     @include text-shortener;
@@ -20,8 +20,10 @@
 
   &-image {
     overflow: hidden;
+
     width: 75px;
     height: 75px;
+
     border-radius: 4px;
 
     img {
@@ -55,9 +57,9 @@
 
     .widget-news__item-wrapper {
       background: radial-gradient(
-        ellipse at center,
-        rgba($color-dark, 0.65) 0%,
-        rgba($color-dark, 0) 100%
+      ellipse at center,
+      rgba($color-dark, 0.65) 0%,
+      rgba($color-dark, 0) 100%
       );
     }
   }

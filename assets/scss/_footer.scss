@@ -3,6 +3,7 @@
 
   &-top {
     display: flex;
+
     margin-right: -($gap / 4);
     margin-left: -($gap / 4);
 
@@ -12,6 +13,7 @@
 
     &__item {
       padding: 0 $gap / 4;
+
       color: $color-light;
 
       @include md-min {
